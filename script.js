@@ -90,7 +90,7 @@ const render = () => {
     ctx.translate(confetto.position.x, confetto.position.y);
     ctx.rotate(confetto.rotation);
 
-    // Apply forces to velocity
+    // Apply forces to velocit
     confetto.velocity.x -= confetto.velocity.x * drag;
     confetto.velocity.y = Math.min(confetto.velocity.y + gravity, terminalVelocity);
     confetto.velocity.x += Math.random() > 0.5 ? Math.random() : -Math.random();
